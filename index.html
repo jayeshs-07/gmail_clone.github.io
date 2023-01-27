@@ -65,8 +65,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="row">
-            <div class="col-md-8 searchbar">
+          
+            <div class="searchbar">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <span class="fa-solid fa-sliders form-control-sider"></span>
+                <input type="text" class="form-control" placeholder="Search mail">
+                
+              </div>
+                
                 
             </div>
             <div class="right_side_nav">
@@ -111,7 +118,9 @@
                 <!-- /.dropdown-->
                 <li class="dropdown">
                   <a class="dropdown" data-toggle="dropdown" href="#">
-                    <img src="/Assets/Image/profile-icon.png" alt=""/>
+                    <div class="profile-picture small-profile-picture">
+                      <a class="right_iconbar"  href="#"><img width="40px" alt="Anne Hathaway picture" src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg"></a>
+                  </div>
                   </a>
                   <!-- <ul class="dropdown-menu dropdown-user">
                     <li>
@@ -138,5 +147,124 @@
         </div>
       </div>
     </nav>
+    <div class="main_inbox">
+      
+    <div class="inbox-body">
+      <div class="mail-option">
+        <div class="chk-all">
+          <input type="checkbox" class="mail-checkbox mail-group-checkbox">
+          <div class="btn-group">
+            <a data-toggle="dropdown" href="#"  aria-expanded="false">                             
+                <i class="fa fa-angle-down "></i>
+                
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"> None</a></li>
+              <li><a class="dropdown-item" href="#"> Read</a></li>
+              <li><a class="dropdown-item" href="#"> Unread</a></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#">
+              <i class="fa-solid fa-rotate-right"></i>
+            </a>
+          </div>
+          <div class="btn-group">
+            <a data-toggle="dropdown" href="#" >
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+          </div>
+        </div>
+
+       
+        
+
+        <ul class="unstyled inbox-pagination">
+          <li><span>1-50 of 234</span></li>
+          <li>
+            <a class="np-btn" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
+          </li>
+          <li>
+            <a class="np-btn" href="#"><i class="fa fa-angle-right pagination-right"></i></a>
+          </li>
+        </ul>
+      </div>
+      <table class="table table-inbox table-hover">
+        <tbody>
+          <tr class="unread">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+            <td class="view-message  dont-show">PHPClass</td>
+            <td class="view-message ">Added a new class: Login Class Fast Site</td>
+            <td class="view-message  inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+            <td class="view-message  text-right">9:27 AM</td>
+          </tr>
+          <tr class="unread">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+            <td class="view-message dont-show">Google Webmaster </td>
+            <td class="view-message">Improve the search presence of WebSite</td>
+            <td class="view-message inbox-small-cells"></td>
+            <td class="view-message text-right">March 15</td>
+          </tr>
+          <tr class="">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+            <td class="view-message dont-show">JW Player</td>
+            <td class="view-message">Last Chance: Upgrade to Pro for </td>
+            <td class="view-message inbox-small-cells"></td>
+            <td class="view-message text-right">March 15</td>
+          </tr>
+          <tr class="">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star"></i></td>
+            <td class="view-message dont-show">Tim Reid, S P N</td>
+            <td class="view-message">Boost Your Website Traffic</td>
+            <td class="view-message inbox-small-cells"></td>
+            <td class="view-message text-right">April 01</td>
+          </tr>
+          <tr class="">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+            <td class="view-message dont-show">Freelancer.com <span class="label label-danger pull-right">urgent</span></td>
+            <td class="view-message">Stop wasting your visitors </td>
+            <td class="view-message inbox-small-cells"></td>
+            <td class="view-message text-right">May 23</td>
+          </tr>
+          <tr class="">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+            <td class="view-message dont-show">WOW Slider </td>
+            <td class="view-message">New WOW Slider v7.8 - 67% off</td>
+            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+            <td class="view-message text-right">March 14</td>
+          </tr>
+          <tr class="">
+            <td class="inbox-small-cells">
+              <input type="checkbox" class="mail-checkbox">
+            </td>
+            <td class="inbox-small-cells"><i class="fa fa-star inbox-started"></i></td>
+            <td class="view-message dont-show">LinkedIn Pulse</td>
+            <td class="view-message">The One Sign Your Co-Worker Will Stab</td>
+            <td class="view-message inbox-small-cells"><i class="fa fa-paperclip"></i></td>
+            <td class="view-message text-right">Feb 19</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
   </body>
 </html>

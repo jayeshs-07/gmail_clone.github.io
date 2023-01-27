@@ -1,0 +1,30 @@
+a{
+    color: #5f6368;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav  > li {
+    margin-left: 18px;
+}
+.svg-inline{
+    display: var(--fa-display,inline-block);
+    width: 20px;
+    height: 20px;
+}
+.bg-primary{
+    --bs-bg-opacity: 0.04;
+    background-color: #f6f8fc!important;
+}
+.searchbar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.inner_right_side_nav{
+    list-style: none;
+}

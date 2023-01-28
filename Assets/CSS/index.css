@@ -102,6 +102,68 @@ a{
 }
 
 /* inbox body css*/
+/**
+ * Tabs
+ */
+ .tabs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tabs label {
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+    border-bottom: 2px solid #0b57d0;
+    font-weight: bold;
+    transition: background ease 0.2s;
+  }
+  
+  .tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  .tabs input[type=radio] {
+    display: none;
+  }
+  .tabs label:hover{
+    background-color: #44444414;
+  }
+  .tabs label > p{
+    display: inline-block;
+    position: relative;
+    margin-left: 12px;
+  }
+  .tabs > .icon {
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    margin: 20px 0 0 12px;
+    height: 15px;
+  }
+  .tabs input[type=radio]:checked + label + .tab {
+    display: block;
+  }
+  
+  @media (max-width: 45em) {
+    .tabs .tab,
+  .tabs label {
+      order: initial;
+    }
+  
+    .tabs label {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0.2rem;
+    }
+  }
+
 .main_inbox{
     background-color: #f6f8fc;
     display: block;
@@ -120,6 +182,28 @@ a{
     padding: 12px 0;
     text-align: center;
     width: 100%;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #575a5e;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-link:focus{
+    border-bottom: 3px solid #0b57d0;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #575a5e;
+    background-color: #49505729;
+    
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #0b57d0;
+    background-color: #fff;
+    border-color: var(--bs-nav-tabs-link-active-border-color);
 }
 .btn-compose:hover {
     background: none repeat scroll 0 0 #f5675c;

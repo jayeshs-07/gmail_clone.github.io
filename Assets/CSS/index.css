@@ -216,7 +216,7 @@ ul.inbox-nav {
     width: 100%;
 }
 .inbox-divider {
-    border-bottom: 1px solid #d5d8df;
+    border-bottom: 1pfx solid #d5d8df;
 }
 ul.inbox-nav li {
     display: inline-block;
